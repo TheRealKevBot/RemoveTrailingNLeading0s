@@ -1,5 +1,6 @@
 function removeLeadingTrailing(n) {
-	
+	let number = n.replace(/^0+/, '').toString()
+    return number ? parseFloat(number, 10) : 0
 } 
 
 console.log(removeLeadingTrailing("230.000"), "230")
